@@ -52,3 +52,88 @@ h1 {
 p {
     font-size: 18px;
 }
+/* Hero sekce s obrázkem */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Features sekce */
+.features {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.feature {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+}
+
+.feature h3 {
+  margin: 10px 0 5px;
+}
+
+.feature p {
+  font-size: 0.9em;
+}
+
+/* Citát sekce */
+.quote {
+  background-color: #388E3C;
+  color: white;
+  padding: 30px 10px;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+  background-color: #2E7D32;
+  text-align: center;
+  padding: 10px 0;
+}
