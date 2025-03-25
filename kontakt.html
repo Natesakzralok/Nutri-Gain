@@ -3,146 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt – NutriGain</title>
+  <title>Kontakt | NutriGain</title>
   <link rel="stylesheet" href="styly.css" />
-  <style>
-    body {
-      background: linear-gradient(to bottom, #e8f5e9, #fff6f6);
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      padding: 20px;
-      text-align: center;
-      background-color: #c8e6c9;
-    }
-
-    .logo {
-      width: 120px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      color: #2e7d32;
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    nav {
-      background-color: #2e7d32;
-      padding: 15px;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 20px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    nav ul li a:hover {
-      background-color: #e67e22;
-      padding: 5px 10px;
-      border-radius: 5px;
-    }
-
-    .contact-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .contact-info {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .contact-info h2 {
-      color: #8e44ad;
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
-
-    .contact-form {
-      width: 100%;
-      background-color: #fff0f0;
-      padding: 30px;
-      border-radius: 15px;
-      border-left: 6px solid #e74c3c;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .contact-form h2 {
-      color: #e67e22;
-      margin-bottom: 20px;
-    }
-
-    .contact-form label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 2px solid #c8e6c9;
-      border-radius: 8px;
-      font-size: 1em;
-      background-color: #fdfdfd;
-    }
-
-    .contact-form button {
-      background-color: #8e44ad;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .contact-form button:hover {
-      background-color: #732d91;
-    }
-
-    footer {
-      background-color: #c8e6c9;
-      text-align: center;
-      padding: 20px;
-      color: #2e7d32;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="icon" href="favicon.jpg" type="image/jpeg" />
 </head>
 <body>
 
   <header>
     <img src="logo.jpg" alt="Logo NutriGain" class="logo" />
-    <h1>Kontaktuj mě</h1>
-    <p>Máš dotaz, nápad nebo zpětnou vazbu? Ozvi se mi!</p>
+    <h1>Kontakt</h1>
+    <p>Máš otázky nebo chceš poradit? Ozvi se!</p>
   </header>
 
   <nav>
@@ -151,30 +21,17 @@
       <li><a href="tipy.html">Tipy na přibírání</a></li>
       <li><a href="jidelnicky.html">Jídelníčky</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="bmi.html">BMI kalkulačka</a></li>
     </ul>
   </nav>
 
-  <main class="contact-section">
+  <section class="contact-section">
     <div class="contact-info">
-      <h2>Kontakt</h2>
-      <p><strong>Jméno:</strong> Natalie Sedláčková</p>
-      <p><strong>E-mail:</strong> <a href="mailto:natalie.sedlackova@icloud.com">natalie.sedlackova@icloud.com</a></p>
+      <h2>Napiš mi</h2>
+      <p>Email: info@nutrigain.cz</p>
+      <p>Instagram: @nutrigain</p>
     </div>
-
-    <form class="contact-form">
-      <h2>Napiš mi zprávu</h2>
-      <label for="jmeno">Jméno:</label>
-      <input type="text" id="jmeno" name="jmeno" placeholder="Tvoje jméno" required>
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" placeholder="Tvoje e-mailová adresa" required>
-
-      <label for="zprava">Zpráva:</label>
-      <textarea id="zprava" name="zprava" rows="5" placeholder="Sem napiš svoji zprávu..." required></textarea>
-
-      <button type="submit">Odeslat</button>
-    </form>
-  </main>
+  </section>
 
   <footer>
     <p>&copy; 2025 NutriGain.cz | Všechna práva vyhrazena.</p>
