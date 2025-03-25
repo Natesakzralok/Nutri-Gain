@@ -1,37 +1,37 @@
 body {
-  background-color: #e8f5e9;
+  background-color: #f4fff6;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
-header {
-  padding: 20px;
+.colorful-header {
+  background: linear-gradient(90deg, #e67e22, #e74c3c, #9b59b6);
   text-align: center;
-  background-color: #c8e6c9;
+  padding: 30px 20px;
+  color: white;
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 10px;
+  width: 130px;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 h1 {
-  color: #2e7d32;
   font-size: 2.5em;
   margin-bottom: 10px;
 }
 
-p {
+.colorful-header p {
   font-size: 1.1em;
-  color: #555;
   max-width: 700px;
   margin: 0 auto;
 }
 
-nav {
-  background-color: #2e7d32;
+.rainbow-nav {
+  background: linear-gradient(to right, #9b59b6, #e67e22, #e74c3c);
   padding: 15px;
 }
 
@@ -52,12 +52,13 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
+  transition: background 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #e67e22;
-  border-radius: 5px;
+  background-color: rgba(255,255,255,0.2);
   padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .icons {
@@ -82,197 +83,32 @@ nav ul li a:hover {
   margin-top: 10px;
   font-size: 1em;
   font-weight: bold;
-  color: #2e7d32;
+  color: #e67e22;
 }
 
-.about {
-  background-color: #f1f8e9;
+.colorful-about {
+  background-color: #fdebd0;
   padding: 40px 20px;
   text-align: center;
 }
 
-.about h2 {
-  color: #2e7d32;
+.colorful-about h2 {
+  color: #e74c3c;
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-.about p {
+.colorful-about p {
   font-size: 1.1em;
   max-width: 700px;
   margin: 0 auto;
   color: #444;
 }
 
-.tips-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.tip-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 25px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.tip-card:hover {
-  transform: scale(1.02);
-}
-
-.tip-card img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 15px;
-}
-
-.tip-card h2 {
-  color: #e67e22;
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.tip-card p {
-  color: #444;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-@media (min-width: 768px) {
-  .tips-section {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 footer {
-  background-color: #c8e6c9;
+  background-color: #e67e22;
   text-align: center;
   padding: 20px;
-  color: #2e7d32;
-  font-weight: bold;
-}
-
-.mealplans-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.meal-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  border-left: 6px solid #e67e22;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 25px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
-
-.meal-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 14px rgba(230, 126, 34, 0.3);
-}
-
-.meal-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  max-height: 250px;
-  object-fit: cover;
-}
-
-.meal-card h2 {
-  color: #e67e22;
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.meal-card ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1em;
-  color: #444;
-}
-
-.meal-card li {
-  margin-bottom: 8px;
-}
-
-@media (min-width: 768px) {
-  .mealplans-section {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contact-info {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.contact-info h2 {
-  color: #2e7d32;
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.contact-form {
-  width: 100%;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.contact-form h2 {
-  color: #e67e22;
-  margin-bottom: 20px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #c8e6c9;
-  border-radius: 8px;
-  font-size: 1em;
-  background-color: #f9f9f9;
-}
-
-.contact-form button {
-  background-color: #e67e22;
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #cf6412;
+  font-weight: bold;
 }
