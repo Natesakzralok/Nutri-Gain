@@ -1,1 +1,53 @@
-z
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – NutriGain</title>
+  <link rel="stylesheet" href="styly.css" />
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Logo NutriGain" class="logo" />
+    <h1>Kontaktuj mě</h1>
+    <p>Máš dotaz, nápad nebo zpětnou vazbu? Ozvi se mi!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Domů</a></li>
+      <li><a href="tipy.html">Tipy na přibírání</a></li>
+      <li><a href="jidelnicky.html">Jídelníčky</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact-section">
+    <div class="contact-info">
+      <h2>Kontakt</h2>
+      <p><strong>Jméno:</strong> Natalie Sedláčková</p>
+      <p><strong>E-mail:</strong> <a href="mailto:natalie.sedlackova@icloud.com">natalie.sedlackova@icloud.com</a></p>
+    </div>
+
+    <form class="contact-form">
+      <h2>Napiš mi zprávu</h2>
+      <label for="jmeno">Jméno:</label>
+      <input type="text" id="jmeno" name="jmeno" placeholder="Tvoje jméno" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Tvoje e-mailová adresa" required>
+
+      <label for="zprava">Zpráva:</label>
+      <textarea id="zprava" name="zprava" rows="5" placeholder="Sem napiš svoji zprávu..." required></textarea>
+
+      <button type="submit">Odeslat</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NutriGain.cz | Všechna práva vyhrazena.</p>
+  </footer>
+
+</body>
+</html>
