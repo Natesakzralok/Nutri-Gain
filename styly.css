@@ -55,7 +55,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #e67e22;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .icons {
@@ -131,7 +133,7 @@ nav ul li a:hover {
 }
 
 .tip-card h2 {
-  color: #2e7d32;
+  color: #e67e22;
   font-size: 1.4em;
   margin-bottom: 10px;
 }
@@ -155,6 +157,7 @@ footer {
   color: #2e7d32;
   font-weight: bold;
 }
+
 .mealplans-section {
   display: grid;
   grid-template-columns: 1fr;
@@ -167,13 +170,16 @@ footer {
 .meal-card {
   background-color: #ffffff;
   border-radius: 15px;
+  border-left: 6px solid #e67e22;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 25px;
+  margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
 
 .meal-card:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(230, 126, 34, 0.3);
 }
 
 .meal-card img {
@@ -185,7 +191,7 @@ footer {
 }
 
 .meal-card h2 {
-  color: #2e7d32;
+  color: #e67e22;
   font-size: 1.4em;
   margin-bottom: 10px;
 }
@@ -205,29 +211,4 @@ footer {
   .mealplans-section {
     grid-template-columns: 1fr 1fr;
   }
-}
-/* ORANŽOVÁ DOPLŇKOVÁ BARVA */
-h2 {
-  color: #e67e22; /* oranžová nadpisy */
-}
-
-.meal-card {
-  border-left: 6px solid #e67e22; /* oranžový proužek u jídelníčku */
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 25px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
-
-.meal-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 14px rgba(230, 126, 34, 0.3);
-}
-
-nav ul li a:hover {
-  background-color: #e67e22;
-  border-radius: 5px;
-  padding: 5px 10px;
 }
