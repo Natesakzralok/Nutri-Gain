@@ -155,3 +155,54 @@ footer {
   color: #2e7d32;
   font-weight: bold;
 }
+.mealplans-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.meal-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: scale(1.01);
+}
+
+.meal-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.meal-card h2 {
+  color: #2e7d32;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.meal-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+  color: #444;
+}
+
+.meal-card li {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .mealplans-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
