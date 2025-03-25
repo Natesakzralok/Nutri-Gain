@@ -101,3 +101,48 @@ nav ul li a:hover {
     margin: 0 auto;
     color: #444;
 }
+.tips-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tip-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: scale(1.02);
+}
+
+.tip-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.tip-card h2 {
+  color: #2e7d32;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.tip-card p {
+  color: #444;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .tips-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
