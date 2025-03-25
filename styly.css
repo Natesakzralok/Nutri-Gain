@@ -1,94 +1,286 @@
 body {
+  background-color: #e8f5e9;
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #eafae5;
+  padding: 0;
   color: #333;
 }
 
 header {
+  padding: 20px;
   text-align: center;
-  padding: 30px 20px;
-  background-color: #d7f2cc;
+  background-color: #c8e6c9;
 }
 
 .logo {
   width: 120px;
-  height: auto;
-  border-radius: 10px;
   margin-bottom: 10px;
 }
 
 h1 {
-  color: #2d572c;
+  color: #2e7d32;
+  font-size: 2.5em;
   margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 nav {
-  background-color: #2d572c;
+  background-color: #2e7d32;
+  padding: 15px;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
-nav li {
-  margin: 0 15px;
+nav ul li {
+  display: inline;
+  margin: 0 20px;
 }
 
-nav a {
-  display: block;
-  padding: 15px 10px;
+nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
-nav a:hover {
-  background-color: #4a7848;
+nav ul li a:hover {
+  background-color: #e67e22;
   border-radius: 5px;
+  padding: 5px 10px;
 }
 
-.duhove-bloky {
+/* DUHOVÉ POZADÍ PRO SEKCI ICONS */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px auto;
+  max-width: 800px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  border-radius: 15px;
   background: linear-gradient(to right, #b388eb, #ff6f61, #ffb74d, #81c784);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icons div {
+  text-align: center;
+  color: white;
+}
+
+.icons img {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+}
+
+.icons p {
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+
+.about {
+  background-color: #f1f8e9;
   padding: 40px 20px;
   text-align: center;
-  border-radius: 15px;
-  color: white;
-  margin: 40px auto;
-  max-width: 1000px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+}
+
+.about h2 {
+  color: #2e7d32;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #444;
+}
+
+.tips-section {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.duhove-bloky div {
-  flex: 1 1 200px;
+.tip-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.duhove-bloky i {
-  font-size: 40px;
+.tip-card:hover {
+  transform: scale(1.02);
+}
+
+.tip-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.tip-card h2 {
+  color: #e67e22;
+  font-size: 1.4em;
   margin-bottom: 10px;
 }
 
-.duhove-bloky h3 {
-  margin-top: 10px;
+.tip-card p {
+  color: #444;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-.o-strance {
-  background-color: #f2f2f2;
-  padding: 40px 20px;
-  text-align: center;
+@media (min-width: 768px) {
+  .tips-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 footer {
-  background-color: #2d572c;
-  color: white;
+  background-color: #c8e6c9;
   text-align: center;
-  padding: 15px 0;
+  padding: 20px;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.mealplans-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.meal-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border-left: 6px solid #e67e22;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(230, 126, 34, 0.3);
+}
+
+.meal-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.meal-card h2 {
+  color: #e67e22;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.meal-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+  color: #444;
+}
+
+.meal-card li {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .mealplans-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #2e7d32;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #c8e6c9;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f9f9f9;
+}
+
+.contact-form button {
+  background-color: #e67e22;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #cf6412;
 }
