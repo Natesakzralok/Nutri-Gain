@@ -60,29 +60,31 @@ nav ul li a:hover {
   padding: 5px 10px;
 }
 
-/* DUHOVÉ POZADÍ PRO SEKCI ICONS */
+/* DUHOVÉ POZADÍ PRO IKONY */
 .icons {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin: 50px auto;
-  max-width: 800px;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 40px 20px;
+  gap: 40px;
+  padding: 50px 20px;
+  background: linear-gradient(90deg, #b388eb, #ff6f61, #ffb74d, #81c784);
   border-radius: 15px;
-  background: linear-gradient(to right, #b388eb, #ff6f61, #ffb74d, #81c784);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .icons div {
   text-align: center;
   color: white;
+  flex: 1 1 200px;
 }
 
 .icons img {
   width: 70px;
   height: 70px;
-  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
 }
 
 .icons p {
@@ -111,176 +113,10 @@ nav ul li a:hover {
   color: #444;
 }
 
-.tips-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.tip-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 25px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.tip-card:hover {
-  transform: scale(1.02);
-}
-
-.tip-card img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 15px;
-}
-
-.tip-card h2 {
-  color: #e67e22;
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.tip-card p {
-  color: #444;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-@media (min-width: 768px) {
-  .tips-section {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 footer {
   background-color: #c8e6c9;
   text-align: center;
   padding: 20px;
   color: #2e7d32;
   font-weight: bold;
-}
-
-.mealplans-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.meal-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  border-left: 6px solid #e67e22;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 25px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
-
-.meal-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 14px rgba(230, 126, 34, 0.3);
-}
-
-.meal-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  max-height: 250px;
-  object-fit: cover;
-}
-
-.meal-card h2 {
-  color: #e67e22;
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.meal-card ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1em;
-  color: #444;
-}
-
-.meal-card li {
-  margin-bottom: 8px;
-}
-
-@media (min-width: 768px) {
-  .mealplans-section {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contact-info {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.contact-info h2 {
-  color: #2e7d32;
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.contact-form {
-  width: 100%;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.contact-form h2 {
-  color: #e67e22;
-  margin-bottom: 20px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #c8e6c9;
-  border-radius: 8px;
-  font-size: 1em;
-  background-color: #f9f9f9;
-}
-
-.contact-form button {
-  background-color: #e67e22;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #cf6412;
 }
