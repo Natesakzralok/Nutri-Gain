@@ -1,3 +1,4 @@
+/* ZÁKLADNÍ NASTAVENÍ */
 body {
   background-color: #e8f5e9;
   font-family: 'Arial', sans-serif;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* HLAVIČKA */
 header {
   padding: 20px;
   text-align: center;
@@ -30,6 +32,7 @@ p {
   margin: 0 auto;
 }
 
+/* NAVIGACE */
 nav {
   background-color: #2e7d32;
   padding: 15px;
@@ -60,6 +63,7 @@ nav ul li a:hover {
   padding: 5px 10px;
 }
 
+/* DUHOVÉ IKONY */
 .icons {
   display: flex;
   justify-content: center;
@@ -93,6 +97,7 @@ nav ul li a:hover {
   color: white;
 }
 
+/* SEKCE O STRÁNCE */
 .about {
   background-color: #f1f8e9;
   padding: 40px 20px;
@@ -112,71 +117,78 @@ nav ul li a:hover {
   color: #444;
 }
 
+/* BMI STRÁNKA - BAREVNÉ POZADÍ */
+.bmi-color-bg {
+  background: linear-gradient(135deg, #b388eb, #ff6f61, #ffb74d, #81c784);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* BMI BOX */
+.bmi-box.fancy {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.bmi-box.fancy h2 {
+  color: #b344ec;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.bmi-box.fancy label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bmi-box.fancy input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f3d8ff;
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: #fdfafd;
+}
+
+.bmi-box.fancy button {
+  background-color: #e67e22;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.bmi-box.fancy button:hover {
+  background-color: #d45700;
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 1.2em;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* PATIČKA */
 footer {
   background-color: #c8e6c9;
   text-align: center;
   padding: 20px;
   color: #2e7d32;
   font-weight: bold;
-}
-
-/* BMI kalkulačka */
-.bmi-section {
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bmi-box {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-}
-
-.bmi-box h2 {
-  color: #2e7d32;
-  margin-bottom: 20px;
-}
-
-.bmi-box label {
-  display: block;
-  margin: 15px 0 5px;
-  font-weight: bold;
-  color: #444;
-}
-
-.bmi-box input {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #c8e6c9;
-  border-radius: 8px;
-  font-size: 1em;
-  background-color: #f9f9f9;
-}
-
-.bmi-box button {
-  background-color: #e67e22;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.bmi-box button:hover {
-  background-color: #cf6412;
-}
-
-#result {
-  margin-top: 20px;
-  font-size: 1.1em;
-  color: #2e7d32;
 }
