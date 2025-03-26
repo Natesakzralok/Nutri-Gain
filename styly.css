@@ -378,3 +378,8 @@ footer {
   justify-self: center;
   max-width: 500px;
 }
+.tips-section .tip-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 500px;
+}
