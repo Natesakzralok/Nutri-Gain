@@ -327,3 +327,49 @@ footer {
   color: #2e7d32;
   font-weight: bold;
 }
+/* TIPY NA PŘIBÍRÁNÍ */
+.tips-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom right, #d1c4e9, #f8bbd0, #ffe082, #c8e6c9);
+}
+
+.tip-card {
+  background-color: #ffffff;
+  border-left: 6px solid #8e44ad;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: scale(1.02);
+}
+
+.tip-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.tip-card h2 {
+  color: #8e44ad;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.tip-card p {
+  color: #444;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .tips-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
