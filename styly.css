@@ -16,6 +16,9 @@ header {
 .logo {
   width: 120px;
   margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
 }
 
 h1 {
