@@ -385,3 +385,68 @@ footer {
   justify-self: center;
   max-width: 500px;
 }
+.bmi-info-box {
+  background-color: #fff0f6;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: left;
+  border-left: 6px solid #8e44ad;
+}
+
+.bmi-info-box h3 {
+  color: #8e44ad;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+.bmi-info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bmi-info-box li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #444;
+}
+
+.bmi-risk {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.bmi-risk.mild {
+  background-color: #f8bbd0;
+  color: #880e4f;
+}
+
+.bmi-risk.safe {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+
+.bmi-risk.moderate {
+  background-color: #fff9c4;
+  color: #f57f17;
+}
+
+.bmi-risk.warning {
+  background-color: #ffe0b2;
+  color: #e65100;
+}
+
+.bmi-risk.danger {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+}
+
+.bmi-risk.extreme {
+  background-color: #ef9a9a;
+  color: #b71c1c;
+  font-weight: 800;
+}
