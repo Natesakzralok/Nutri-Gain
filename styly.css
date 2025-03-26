@@ -45,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 20px;
 }
 
@@ -62,7 +62,21 @@ nav ul li a:hover {
   padding: 5px 10px;
 }
 
-/* IKONY – DUHOVÝ BLOK */
+/* RESPONSIVNÍ NAVIGACE PRO MOBIL */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+    display: inline-block;
+    padding: 8px 12px;
+  }
+}
+
+/* DUHOVÉ IKONY */
 .icons {
   display: flex;
   justify-content: center;
@@ -198,6 +212,7 @@ nav ul li a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 25px;
   transition: transform 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .meal-card:hover {
@@ -252,16 +267,17 @@ nav ul li a:hover {
 }
 
 .contact-info h2 {
-  color: #2e7d32;
+  color: #8e44ad;
   font-size: 1.8em;
   margin-bottom: 10px;
 }
 
 .contact-form {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff0f0;
   padding: 30px;
   border-radius: 15px;
+  border-left: 6px solid #e74c3c;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -274,6 +290,7 @@ nav ul li a:hover {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #2e7d32;
 }
 
 .contact-form input,
@@ -284,11 +301,11 @@ nav ul li a:hover {
   border: 2px solid #c8e6c9;
   border-radius: 8px;
   font-size: 1em;
-  background-color: #f9f9f9;
+  background-color: #fdfdfd;
 }
 
 .contact-form button {
-  background-color: #e67e22;
+  background-color: #8e44ad;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -299,7 +316,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-  background-color: #cf6412;
+  background-color: #732d91;
 }
 
 /* PATIČKA */
