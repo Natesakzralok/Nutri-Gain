@@ -450,3 +450,34 @@ footer {
   color: #b71c1c;
   font-weight: 800;
 }
+.cviky-blok {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cviky-blok h3 {
+  color: #7c4dff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cviky-blok p {
+  text-align: center;
+}
+
+.cviky-blok ul {
+  list-style-type: disc;
+  margin: 10px 30px;
+}
+
+.obrazek-cviku {
+  margin-top: 15px;
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
