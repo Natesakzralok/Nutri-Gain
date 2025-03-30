@@ -78,269 +78,11 @@ nav ul li a:hover {
   }
 }
 
-/* DUHOVÉ IKONY */
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 50px 20px;
-  background: linear-gradient(90deg, #b388eb, #ff6f61, #ffb74d, #81c784);
-  border-radius: 15px;
-  margin: 50px auto;
-  max-width: 1000px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.icons div {
-  text-align: center;
-  color: white;
-  flex: 1 1 200px;
-}
-
-.icons img {
-  width: 70px;
-  height: 70px;
-  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
-}
-
-.icons p {
-  margin-top: 10px;
-  font-size: 1em;
-  font-weight: bold;
-  color: white;
-}
-
-/* SEKCE O STRÁNCE */
-.about {
-  background-color: #f1f8e9;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.about h2 {
-  color: #2e7d32;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #444;
-}
-
-/* BMI SEKCE */
-.bmi-color-bg {
-  background: linear-gradient(135deg, #b388eb, #ff6f61, #ffb74d, #81c784);
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-}
-
-.bmi-box.fancy {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-}
-
-.bmi-box.fancy h2 {
-  color: #b344ec;
-  margin-bottom: 20px;
-  font-size: 1.8em;
-}
-
-.bmi-box.fancy label {
-  display: block;
-  margin: 15px 0 5px;
-  font-weight: bold;
-  color: #333;
-}
-
-.bmi-box.fancy input {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #f3d8ff;
-  border-radius: 10px;
-  font-size: 1em;
-  background-color: #fdfafd;
-}
-
-.bmi-box.fancy button {
-  background-color: #e67e22;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1em;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.bmi-box.fancy button:hover {
-  background-color: #d45700;
-}
-
-#result {
-  margin-top: 25px;
-  font-size: 1.2em;
-  color: #2e7d32;
-  font-weight: bold;
-}
-
-/* JÍDELNÍČKY */
-.mealplans-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.meal-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  border-left: 6px solid #e67e22;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 25px;
-  transition: transform 0.3s ease;
-  margin-bottom: 30px;
-}
-
-.meal-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 14px rgba(230, 126, 34, 0.3);
-}
-
-.meal-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  max-height: 250px;
-  object-fit: cover;
-}
-
-.meal-card h2 {
-  color: #e67e22;
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.meal-card ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1em;
-  color: #444;
-}
-
-.meal-card li {
-  margin-bottom: 8px;
-}
-
-@media (min-width: 768px) {
-  .mealplans-section {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* KONTAKTNÍ STRÁNKA */
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contact-info {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.contact-info h2 {
-  color: #8e44ad;
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.contact-form {
-  width: 100%;
-  background-color: #fff0f0;
-  padding: 30px;
-  border-radius: 15px;
-  border-left: 6px solid #e74c3c;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.contact-form h2 {
-  color: #e67e22;
-  margin-bottom: 20px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #2e7d32;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #c8e6c9;
-  border-radius: 8px;
-  font-size: 1em;
-  background-color: #fdfdfd;
-}
-
-.contact-form button {
-  background-color: #8e44ad;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #732d91;
-}
-
-/* PATIČKA */
-footer {
-  background-color: #c8e6c9;
-  text-align: center;
-  padding: 20px;
-  color: #2e7d32;
-  font-weight: bold;
-}
-
 /* SEKCE CVIKY */
 .cviky-page {
   background-color: #f1f8e9;
   padding: 40px 20px;
   text-align: center;
-}
-
-.cviky-page h2 {
-  color: #2e7d32;
-  font-size: 2em;
-  margin-bottom: 20px;
 }
 
 .cviky-blok {
@@ -360,12 +102,6 @@ footer {
   font-size: 1.6em;
 }
 
-.cviky-blok p {
-  text-align: center;
-  color: #444;
-  margin-bottom: 10px;
-}
-
 .cviky-blok ul {
   list-style-type: disc;
   margin: 10px auto;
@@ -377,6 +113,11 @@ footer {
   margin-bottom: 8px;
   font-size: 1em;
   color: #444;
+}
+
+.cviky-blok p {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .obrazek-cviku {
