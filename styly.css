@@ -349,52 +349,6 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 25px;
   max-width: 900px;
-  margin: 20px auto;
-  text-align: left;
-  border-left: 6px solid #8e44ad;
-}
-
-.cviky-blok h3 {
-  color: #8e44ad;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.cviky-blok ul {
-  list-style-type: disc;
-  margin: 10px 30px;
-  padding-left: 10px;
-}
-
-.cviky-blok p {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.obrazek-cviku {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.obrazek-cviku img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-/* SEKCE CVIKY */
-.cviky-page {
-  background-color: #f1f8e9;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.cviky-blok {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 25px;
-  max-width: 900px;
   margin: 30px auto;
   border-left: 6px solid #8e44ad;
 }
