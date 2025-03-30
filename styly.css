@@ -509,3 +509,64 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.cviky-page {
+  background-color: #f1f8e9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cviky-page .uvod {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  font-size: 1.2em;
+  color: #444;
+}
+
+.cviky-blok {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-left: 6px solid #8e44ad;
+  text-align: center;
+}
+
+.cviky-blok h3 {
+  color: #8e44ad;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+.cviky-blok p {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.cviky-blok ul {
+  list-style-type: disc;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.cviky-blok ul li {
+  margin-bottom: 8px;
+  font-size: 1em;
+  color: #333;
+}
+
+.obrazek-cviku {
+  margin-top: 20px;
+}
+
+.obrazek-cviku img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
